@@ -38,6 +38,28 @@
         <p>Motivated AI expert.</p>
     </div>
 
+    <button id="openDialogBtn">More About the Team</button>
+
+    <dialog id="teamDialog">
+        <h2>More About Our Team</h2>
+        <p>Our team consists of highly motivated professionals dedicated to advancing molecular biology and AI research.</p>
+        <button id="closeDialogBtn">Close</button>
+    </dialog>
+
+    <script>
+        const dialog = document.getElementById('teamDialog');
+        const openBtn = document.getElementById('openDialogBtn');
+        const closeBtn = document.getElementById('closeDialogBtn');
+
+        openBtn.addEventListener('click', () => {
+            dialog.showModal();
+        });
+
+        closeBtn.addEventListener('click', () => {
+            dialog.close();
+        });
+    </script>
+
 </body>
 
 </html>
