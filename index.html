@@ -12,81 +12,95 @@
 
 <body>
 
-    <h1>Team Members</h1>
+    <!-- Main Header -->
+    <h1>USDA-ARS Boll Weevil Unit at SPARC</h1>
 
-    <div id="staff1">
-        <h2>Dr. Lindsey Perkin</h2>
-        <img src="images/lindsey.jpg">
-        <p>Position: Research Molecular Biologist</p>
-        <p>Member Since: November, 2019</p>
-        <p>Dr. Lindsey is Motivated Molecular Biologist.
-            She has 10 years of experience as a Research Molecular Biologist with the United States Department of Agriculture, 
-            Agriculture Research Service (USDA-ARS). 
+    <!-- Research Area of Interest -->
+    <h2>Research Area of Interest</h2>
+    <p>The boll weevil, <i>Anthonomus grandis grandis</i> Boheman, 1843 (Coleoptera: Curculionidae), is a historically significant pest of commercially cultivated upland cotton, 
+        <i>Gossypium hirsutum</i> L. (Malvales: Malvaceae), that continues to impact cultivated cotton across the Americas. <i>Anthonomus grandis grandis</i> (abbr. Agg) is native 
+        to Mexico and was first detected in the U.S. in Brownsville, TX, in 1892. The weevil quickly spread throughout the U.S. Cotton Belt, reaching the East Coast by 1916 
+        (Burke et al., 1986). In 1978, the USDA launched the Boll Weevil Eradication Program—a concerted, multi-state program designed to unify the management approach and 
+        eradicate the pest. 
+        <br><br> 
+        Two critical pillars of the program were (1) monitoring for Agg using pheromone-baited cone traps and (2) controlling the pest via the application of insecticides. 
+        Today, control efforts in the U.S. remain reliant on pheromone-baited traps and the organophosphate insecticide malathion. However, emerging EPA standards will 
+        likely restrict organophosphates due to ecological concerns, significantly complicating Agg management and eradication efforts. Moreover, monitoring efforts are complicated by 
+        the fact that there are several sympatric, non-cotton pest weevil species that resemble Agg and are attracted to the Agg pheromone lure. These species include 
+        <i>A. g. thurberiae</i> Pierce (abbr. <i>Agt</i>), <i>A. eugenii</i>, <i>A. texanus></i>, <i>A. hunteri</i>, <i>A. fulvus</i>, <i>A. cognatus</i>, <i>A. peninsularis</i>, 
+        <i>Conotrachelus naso</i>, <i>Conotrachelus seniculus</i>, and <i>Curculio fulvus</i>. Of these, the most problematic is the Agg sister-taxon, <i>Agt</i>, which looks identical 
+        to the untrained eye. Rapidly identifying Agg in the field and developing data pipelines for the design of Agg-specific pesticides are critical for long-term productivity 
+        and sustainability of U.S. cotton. 
+        <br><br> 
+        Given rapid advancements in comparative genomics and AI methodologies, the next step is to develop tools that can give reliable results within minutes 
+        and are nearly 100% accurate in distinguishing non-cotton pest weevils from Agg, and can be performed by anyone; ultimately eliminating latency between weevil capture and 
+        identification. To complement the rapid AI-image detection based tool, we further propose to develop a lateral flow device (LFD), much like the “at-home” tests that became 
+        widely used during the COVID-19 pandemic. LFD assays are broadly deployable in the field and require little to no expertise or training, and they can provide results in as 
+        little as 15 minutes. The development of an LFD that can positively confirm Agg presence would be a boon to the eradication program and provide a tool that could be 
+        distributed throughout the Cotton Belt with minimal need for training or equipment.</p>
+    
+    <!-- Team Members Title -->
+    <h3>Team Members</h3>
 
-        </p>
+    <!-- Staff Members -->
+    <div id="staff-container">
+        <div class="staff-box" id="staff1">
+            <h2>Dr. Lindsey Perkin</h2>
+            <img src="images/lindsey.jpg">
+            <p>Position: Research Molecular Biologist</p>
+            <p>Member Since: November, 2019</p>
+            <p>Dr. Lindsey is a Motivated Molecular Biologist with over 10 years of experience...</p>
+            <button id="openPdf1">View Resume</button>
+        </div>
+    
+        <div class="staff-box" id="staff2">
+            <h2>Dr. Zachary Cohen</h2>
+            <img src="images/zach.PNG">
+            <p>Position: Research Molecular Biologist (postdoc)</p>
+            <p>Member Since: October, 2021</p>
+            <p>Dr. Zachary is a motivated Molecular Biologist and an expert in genetics...</p>
+            <button id="openPdf2">View Resume</button>
+        </div>
+    
+        <div class="staff-box" id="staff3">
+            <h2>Dr. Adama Tukuli</h2>
+            <img src="images/adama.jpg">
+            <p>Position: ARS SCINet/AI Center of Excellence Fellow (postdoc)</p>
+            <p>Member Since: April, 2024</p>
+            <p>Dr. Tukuli is a Motivated AI expert...</p>
+            <button id="openPdf3">View Resume</button>
+        </div>
     </div>
-
-    <div id="staff2">
-        <h2>Dr. Zachary Cohen</h2>
-        <img src="images/zach.PNG">
-        <p>Position: Research Molecular Biologist (postdoc)</p>
-        <p>Member Since: October, 2021</p>
-        <p>Dr. Zachary is motivated Molecular Biologist.
-            He has over ten years of experience as an insect geneticist and evolutionary biologist.  
-
-        </p>
-    </div>
-
-    <div id="staff3">
-        <h2>Dr. Adama Tukuli</h2>
-        <img src="images/adama.jpg">
-        <p>Position: ARS SCINet/AI Center of Excellence Fellow (postdoc)</p>
-        <p>Member Since: April, 2024</p>
-        <p>Dr. Tukuli is Motivated AI expert.
-            He possesses expertise in both life sciences and data science, making him a valuable asset to the weevil detection and 
-            classification project. 
-
-        </p>
-    </div>
-
-    <button id="openDialogBtn">Research Interest</button>
-
-    <dialog id="teamDialog">
-        <h2>Research Area Interest</h2>
-        <p>Our team consists of highly motivated professionals dedicated to advancing molecular biology and AI research.
-            The boll weevil, Anthonomus grandis grandis Boheman, 1843 (Coleoptera: Curculionidae), is a historically 
-            significant pest of commercially cultivated upland cotton, Gossypium hirsutum L. (Malvales: Malvaceae) that 
-            continues to impact cultivated cotton across the Americas. Anthonomus grandis grandis (abbr. Agg) is native 
-            to Mexico and was first detected in the U.S. in Brownsville, TX, in 1892. The weevil quickly spread throughout the U.S. 
-            Cotton Belt, reaching the East Coast by 1916 (Burke et al., 1986). In 1978, the USDA launched the 
-            Boll Weevil Eradication Program - a concerted, multi-state program designed to unify the management 
-            approach and eradicate the pest. Two critical pillars of the program were (1) monitoring for Agg using 
-            pheromone-baited (10 mg grandlure; synthesized boll weevil pheromone) cone traps and (2) 
-            controlling the pest via application of insecticides. Today, control efforts in the U.S. remain reliant on 
-            pheromone-baited traps and the organophosphate insecticide malathion. However, emerging EPA standards will 
-            likely restrict organophosphates due to ecological concerns, which would significantly complicate Agg 
-            management and eradication efforts. Moreover, monitoring efforts are complicated by the fact that there are several sympatric, 
-            non-cotton pest weevil species that resemble Agg and are attracted to the Agg pheromone lure. Therefore, rapidly 
-            identifying Agg in the field as well as developing data pipelines that can be reliably used for the future design of 
-            Agg-specific pesticides is imperative for the long-term productivity and sustainability of U.S. cotton. Given rapid advancements 
-            in comparative genomics and AI methodologies, the next step is to develop tools that give reliable results within minutes, 
-            are nearly 100% accurate in distinguishing non-cotton pest weevils from Agg, and can be performed by anyone; ultimately eliminating 
-            latency between weevil capture and identification. 
-        </p>
-        <button id="closeDialogBtn">Close</button>
+    
+    
+    <!-- PDF Dialog -->
+    <dialog id="pdfDialog">
+        <iframe id="pdfViewer" src="" width="100%" height="400px"></iframe>
+        <button id="closePdfDialogBtn">Close to go back to main page</button>
     </dialog>
 
     <script>
-        const dialog = document.getElementById('teamDialog');
-        const openBtn = document.getElementById('openDialogBtn');
-        const closeBtn = document.getElementById('closeDialogBtn');
+        const pdfDialog = document.getElementById('pdfDialog');
+        const pdfViewer = document.getElementById('pdfViewer');
+        const closePdfDialogBtn = document.getElementById('closePdfDialogBtn');
 
-        openBtn.addEventListener('click', () => {
-            dialog.showModal();
+        document.getElementById('openPdf1').addEventListener('click', () => {
+            pdfViewer.src = 'images/PERKIN_BiographicalSketch.pdf';
+            pdfDialog.showModal();
         });
 
-        closeBtn.addEventListener('click', () => {
-            dialog.close();
+        document.getElementById('openPdf2').addEventListener('click', () => {
+            pdfViewer.src = 'images/Cohen_BiographicalSketch.pdf';
+            pdfDialog.showModal();
+        });
+
+        document.getElementById('openPdf3').addEventListener('click', () => {
+            pdfViewer.src = 'images/TUKULI_BiographicalSketch.pdf';
+            pdfDialog.showModal();
+        });
+
+        closePdfDialogBtn.addEventListener('click', () => {
+            pdfDialog.close();
         });
     </script>
 

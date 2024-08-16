@@ -1,68 +1,119 @@
 body {
-    background-image: url("images/bc.jpg");
-    background-size: cover;
-    font-family: "Aclonica", sans-serif;
-    color: #fff;
-  }
-  
-  h1 {
-    font-size: 48px;
-    text-align: center;
-  }
-  
-  p {
-    font-family: "Inclusive Sans", sans-serif;
-  }
-  
-  div {
-    width: 300px;
-    height: 490px;
-    text-align: center;
-    border-radius: 23px;
-    border: 3px solid orangered;
-    display: inline-block;
-    margin: 20px;
-  }
-  img {
-    height: 100px;
-  }
-  
-  #staff1 {
-    background-color: #651e00;
-    border: 3px dotted #ff5610;
-  }
-  
-  #staff1:hover {
-    background-color: #4c1802;
-  }
-  
-  #staff2 {
-    background-color: #c87502;
-    border: 3px dotted #ffac0d;
-  }
-  
-  #staff2:hover {
-    background-color: #a15e02;
-  }
-  
-  #staff3 {
-    background-color: #02a0c8;
-    border: 3px dotted #44d9ff;
-  }
-  
-  #staff3:hover {
-    background-color: #007a99;
-  }
-  
-  dialog {
-    border: 1px solid #aaa;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 500px;
-    text-align: center;
+  background-image: url("images/bc2.jpg");
+  background-size: cover;
+  font-family: "Aclonica", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Title */
+h1 {
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+/* Research Area of Interest */
+h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+/* Team Members Title */
+h3 {
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 40px auto 20px;
+  width: fit-content;
+}
+
+/* Paragraph Text */
+p {
+  font-family: "Inclusive Sans", sans-serif;
+  margin: 0 10%;
+  text-align: justify;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* Staff Members Container */
+#staff-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Staff Box Styling - common style for all staff */
+.staff-box {
+  display: inline-block;
+  width: 320px;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 23px;
+  border: 3px solid orangered;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 20px;
+  margin: 20px;
+  color: #fff;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevents text overflow */
+  word-wrap: break-word; /* Ensures long words are broken to fit */
+}
+
+/* Paragraph Text Inside Staff Box */
+.staff-box p {
+  margin: 10px 0;
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word; /* Ensures long words break properly */
+  color: #fff;
+}
+
+/* Image Styling */
+.staff-box img {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+
+/* Dialog Styling */
+dialog {
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
 }
 
 dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* PDF Viewer Styling */
+iframe {
+  border: none;
 }
